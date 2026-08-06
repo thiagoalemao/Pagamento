@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagamento confirmado | Mentoria Imersiva Veterinária</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14110B">
+<link rel="icon" href="assets/logo-lockup-white.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- PIXEL: evento de conversão (Purchase / compra) vai aqui.
+     Atenção: esta página só carrega se o pagamento foi instantâneo
+     (Pix ou cartão). Boleto pago dois dias depois nunca passa por aqui —
+     a conciliação real é a do webhook. -->
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#14110B;font-family:'Poppins',sans-serif;line-height:1.6;color:#F4EFE5;-webkit-font-smoothing:antialiased}
+  a{color:#C6A567;text-decoration:none}
+  a:hover{color:#DCC08A}
+  :focus-visible{outline:2px solid #C6A567;outline-offset:3px}
+  .shell{min-height:100vh;
+    background-image:radial-gradient(1100px 820px at 84% 6%, rgba(150,120,60,.42), transparent 60%),
+                     radial-gradient(900px 760px at 8% 104%, rgba(14,23,38,.85), transparent 58%);
+    display:flex;align-items:center;justify-content:center;padding:40px 24px}
+  .bloco{width:100%;max-width:560px;display:flex;flex-direction:column;gap:28px}
+  .logo{width:190px;height:auto;opacity:.92}
+  .kicker{font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:.22em;font-size:12px;
+    text-transform:uppercase;color:#C6A567}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+    font-size:clamp(34px,5vw,52px);line-height:1.04;margin-top:12px}
+  p{color:rgba(244,239,229,.8);margin-top:14px}
+  .passos{border-top:1px solid rgba(198,165,103,.3);display:flex;flex-direction:column}
+  .passo{display:flex;gap:16px;padding:18px 0}
+  .passo+.passo{border-top:1px solid rgba(198,165,103,.16)}
+  .n{font-family:'Oswald',sans-serif;font-weight:700;font-size:15px;color:#C6A567;
+    letter-spacing:.08em;padding-top:3px;min-width:24px}
+  .passo b{display:block;font-weight:500;font-size:16px}
+  .passo span{font-size:14px;color:rgba(244,239,229,.62)}
+  .cta{display:inline-block;background:#C6A567;color:#14110B;border-radius:4px;padding:17px 30px;
+    font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+    font-size:17px;text-align:center;transition:background .15s}
+  .cta:hover{background:#DCC08A;color:#14110B}
+  .nota{font-size:13px;color:rgba(244,239,229,.5)}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="shell">
+  <div class="bloco">
+
+    <img class="logo" src="assets/logo-lockup-white.png" alt="Thiago Alemão">
+
+    <div>
+      <div class="kicker">Pagamento confirmado</div>
+      <h1>Sua vaga está garantida</h1>
+      <p>O comprovante e a nota chegam no e-mail que você cadastrou. Se não aparecer em alguns minutos, confira o spam.</p>
+    </div>
+
+    <div class="passos">
+      <div class="passo">
+        <div class="n">01</div>
+        <div>
+          <b>Entre no grupo da turma</b>
+          <span>É por lá que saem as datas dos encontros e os materiais de cada módulo.</span>
+        </div>
+      </div>
+      <div class="passo">
+        <div class="n">02</div>
+        <div>
+          <b>Responda o diagnóstico inicial</b>
+          <span>O link vai no primeiro e-mail. Ele define por onde começamos na sua clínica.</span>
+        </div>
+      </div>
+      <div class="passo">
+        <div class="n">03</div>
+        <div>
+          <b>Separe os números da clínica</b>
+          <span>Faturamento dos últimos 12 meses, folha e despesas fixas. Vamos usar já no primeiro encontro.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TROQUE pelo link real do grupo de WhatsApp da turma. -->
+    <a class="cta" href="https://chat.whatsapp.com/SEU-LINK-DO-GRUPO">Entrar no grupo da turma</a>
+
+    <p class="nota">Dúvida sobre o pagamento ou sobre o acesso? Chame no WhatsApp <a href="https://wa.me/55SEUNUMERO">(seu número aqui)</a>.</p>
+
+  </div>
+</div>
+
+</body>
+</html>
